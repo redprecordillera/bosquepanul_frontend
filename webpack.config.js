@@ -1,9 +1,30 @@
 var path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-module.exports = {
-  entry: './app/index.js',
+var config = {
+  entry: {
+    'app': ['./app/index.js'],
+    'style': ['./assets/sass/index.scss'],
+  },
   output: {
-    filename: 'bundle.js',
+    filename: "[name].bundle.js",
+    chunkFilename: "[id].bundle.js",
     path: path.resolve(__dirname, 'dist')
-  }
-};
+  },
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use:      'css-loader!sass-loader'
+        })
+      },
+    ]
+  },
+  plugins: [
+    new ExtractTextPlugin("styles.css"),
+  ]
+}
+
+module.exports = config;

@@ -4,9 +4,17 @@
   "description": "Frontend written in angularjs with",
   "main": "index.js",
   "dependencies": {
-    "angular": "^1.6.2"
+    "angular": "^1.6.2",
+    "angular-route": "^1.6.2",
+    "angular-ui-router": "^0.4.2"
   },
   "devDependencies": {
+    "css-loader": "^0.26.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.2",
+    "skeleton-css-webpack": "^2.0.4",
+    "style-loader": "^0.13.2",
     "webpack": "^2.2.1"
   },
   "scripts": {

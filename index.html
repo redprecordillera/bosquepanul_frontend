@@ -1,9 +1,17 @@
 <html>
+
 <head>
-  <title>Hello world from Bosque Panul</title>
+  <title>
+    Hello world from Bosque Panul
+  </title>
+  <!-- Stylesheet with skeleton and common css styles -->
+  <link rel="stylesheet" type="text/css" href="dist/styles.css">
+  <!-- App Bundle with angularjs bundled modules and dependencies -->
+  <script src="dist/app.bundle.js"></script>
 </head>
-<body>
-  <script src="dist/bundle.js"></script>
-  Hello world from Bosque Panul
+
+<body ng-app="app" ng-controller="AppController">
+  <div ng-view></div>
 </body>
+
 </html>
