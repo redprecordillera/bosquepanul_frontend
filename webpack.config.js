@@ -3,7 +3,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var config = {
   entry: {
-    'app': ['./app/index.js'],
+    'app': ['./app/app.js'],
     'style': ['./assets/sass/index.scss'],
   },
   output: {
