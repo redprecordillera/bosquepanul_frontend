@@ -2,6 +2,9 @@
 
 $main-background: url('../../media/images/background.jpg');
 
+// Colors
+$menu-color: #C7C4AC;
+
 body{
   background: $main-background;
 }
@@ -10,4 +13,23 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.floating-nav{
+  @media (min-width: 750px) {
+    position: fixed;
+  }
+  list-style: none;
+  margin: 2rem;
+  padding: 0;
+  display: block;
+  li{
+    text-align: right;
+    a{
+      color: $menu-color;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
 }
