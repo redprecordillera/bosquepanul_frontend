@@ -13,8 +13,6 @@ function config($stateProvider, $urlRouterProvider, $routeProvider){
   .otherwise({
     redirectTo: '/'
   });
-
-  $urlRouterProvider.otherwise('/');
 }
 
 export default config;
