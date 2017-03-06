@@ -11,10 +11,12 @@
   "devDependencies": {
     "css-loader": "^0.26.2",
     "extract-text-webpack-plugin": "^2.1.0",
+    "image-webpack-loader": "^3.2.0",
     "node-sass": "^4.5.0",
     "sass-loader": "^6.0.2",
     "skeleton-css-webpack": "^2.0.4",
     "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
     "webpack": "^2.2.1"
   },
   "scripts": {

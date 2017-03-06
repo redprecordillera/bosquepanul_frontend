@@ -1,7 +1,13 @@
 @import "~skeleton-css-webpack";
 
-$main-background: #8ea61a;
+$main-background: url('../../media/images/background.jpg');
 
 body{
   background: $main-background;
+}
+
+.centered{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

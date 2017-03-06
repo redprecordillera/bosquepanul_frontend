@@ -20,6 +20,12 @@ var config = {
           use:      'css-loader!sass-loader'
         })
       },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: {
+          loader: 'url-loader'
+        }
+      },
     ]
   },
   plugins: [
