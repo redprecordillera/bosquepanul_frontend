@@ -15,6 +15,10 @@ body{
   margin-right: auto;
 }
 
+.align-center{
+  text-align: center;
+}
+
 .floating-nav{
   @media (min-width: 750px) {
     position: fixed;
