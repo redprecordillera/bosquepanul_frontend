@@ -26,6 +26,12 @@ var config = {
           loader: 'url-loader'
         }
       },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: {
+          loader: 'file-loader'
+        }
+      },
     ]
   },
   plugins: [
