@@ -11,10 +11,16 @@ $main-background: url('../../media/images/background.jpg');
 
 // Colors
 $menu-color: #C7C4AC;
+$text-color: #736357;
 
 body{
   background: $main-background;
   font-family: 'Trebuchet';
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
 }
 
 .centered{
