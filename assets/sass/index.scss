@@ -21,6 +21,7 @@ body{
 
 h1, h2, h3, h4, h5, h6{
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .centered{
@@ -31,6 +32,14 @@ h1, h2, h3, h4, h5, h6{
 
 .align-center{
   text-align: center;
+}
+
+.padding-left{
+  padding-left: 4%;
+}
+
+.padding-right{
+  padding-right: 4%;
 }
 
 .floating-nav{
