@@ -3,12 +3,10 @@ config.$inject = ['$stateProvider', '$urlRouterProvider', '$routeProvider'];
 function config($stateProvider, $urlRouterProvider, $routeProvider){
   $routeProvider
   .when('/', {
-    templateUrl : 'app/templates/index.html',
-    controller 	: 'IndexController'
+    templateUrl : 'app/templates/index.html'
   })
   .when('/bosque', {
-    templateUrl : 'app/templates/forest.html',
-    controller 	: 'ForestController'
+    templateUrl : 'app/templates/forest.html'
   })
   .when('/beneficios', {
     templateUrl : 'app/templates/benefits.html'
