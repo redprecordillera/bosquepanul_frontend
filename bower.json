@@ -1,0 +1,21 @@
+{
+  "name": "bosquepanul_frontend",
+  "description": "bosquepanul.cl website",
+  "main": "app/app.js",
+  "authors": [
+    "mcueto <yo@marcelocueto.cl>"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "http://www.bosquepanul.cl",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.gifplayer": "^0.3.3"
+  }
+}
