@@ -1,0 +1,29 @@
+<div class="row centered">
+  <div class="one-half column padding-left">
+    <img class="u-full-width" ng-src="{{$ctrl.species.image_url}}"/>
+  </div>
+  <div class="one-half column padding-right">
+    <h1 class="align-center">
+      Aves
+    </h1>
+    <h5 class="align-center" style="color: #996666;">
+      {{$ctrl.species.name}}
+    </h5>
+    <p>
+      Nombre cientifico: <br>
+      <span style="color: #996666;">
+        {{$ctrl.species.scientific_name}}
+      </span>
+    </p>
+    <p>
+      Estado de conservación: <br>
+      <span style="color: #996666;">
+        {{$ctrl.species.vulnerability}}
+      </span>
+    </p>
+    <p>
+      {{$ctrl.species.description}}
+    </p>
+
+  </div>
+</div>
