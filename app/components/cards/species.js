@@ -11,7 +11,7 @@ var SpeciesCardComponent = {
   controller: SpeciesCardController,
   bindings: {
     species: '=',
-    category: '='
+    category: '<'
   }
 };
 
