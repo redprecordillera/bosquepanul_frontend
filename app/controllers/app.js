@@ -32,6 +32,11 @@ function AppController($scope){
     "image_url": "http://bosquepanul.cl/images/rep_01.png?crc=508820980"
   }];
 
+  $scope.tips = [{
+    "message": "Deja en el bosque lo que es del bosque",
+    "image_url": "http://bosquepanul.cl/images/frame_05352x344.png?crc=145887399"
+  }];
+
 };
 
 export default AppController;
