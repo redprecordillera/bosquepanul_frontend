@@ -35,6 +35,9 @@ function AppController($scope){
   $scope.tips = [{
     "message": "Deja en el bosque lo que es del bosque",
     "image_url": "http://bosquepanul.cl/images/frame_05352x344.png?crc=145887399"
+  },{
+    "message": "Utiliza senderos establecidos",
+    "image_url": "http://bosquepanul.cl/images/frame_06269x263.png?crc=3797328173"
   }];
 
 };

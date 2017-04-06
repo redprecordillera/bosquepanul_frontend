@@ -1,1 +1,1 @@
-<tips-card tip="tip" ng-repeat="tip in $ctrl.list"></tips-card>
+<tips-card ng-show="tip.active" previous-tip="$ctrl.previousTip(tip)" next-tip="$ctrl.nextTip(tip)" tip="tip" ng-repeat="tip in $ctrl.list"></tips-card>
