@@ -24,6 +24,13 @@ h1, h2, h3, h4, h5, h6{
   font-weight: bold;
 }
 
+a{
+  color: $text-color;
+  &:hover{
+    color: lighten($text-color, 20%);
+  }
+}
+
 .centered{
   display: block !important;
   margin-left: auto;
@@ -76,4 +83,10 @@ h1, h2, h3, h4, h5, h6{
 
 .social-icon{
   font-size: 4rem;
+}
+
+.author-credits{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
