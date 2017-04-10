@@ -41,10 +41,13 @@
 		},
 
 		wrap: function(){
+      var keepSize = this.getOption('keepSize');
 			this.previewElement.addClass('gifplayer-ready');
 			this.wrapper = this.previewElement.wrap("<div class='gifplayer-wrapper'></div>").parent();
-			this.wrapper.css('width', this.previewElement.width());
-			this.wrapper.css('height', this.previewElement.height());
+      if(keepSize){
+        this.wrapper.css('width', this.previewElement.width());
+        this.wrapper.css('height', this.previewElement.height());
+      }
 			this.previewElement.css('cursor','pointer');
 		},
 
@@ -164,10 +167,23 @@
 				this.enableAbort();
 			}
 			var gifSrc = this.getFile('gif');
-			var gifWidth = this.previewElement.width();
-			var gifHeight = this.previewElement.height();
+      var keepSize = this.getOption('keepSize');
+      var customClass = this.getOption('customClass');
 
-			this.gifElement=$("<img class='gp-gif-element' width='"+ gifWidth + "' height=' "+ gifHeight +" '/>");
+      if(keepSize){
+        var gifWidth = this.previewElement.width();
+        var gifHeight = this.previewElement.height();
+
+        this.gifElement=$("<img class='gp-gif-element' width='"+ gifWidth + "' height=' "+ gifHeight +" '/>");
+      }else{
+        this.gifElement=$("<img class='gp-gif-element'/>");
+      }
+
+      if(customClass){
+        this.gifElement.addClass(customClass);
+      }
+
+
 
 			var wait = this.getOption('wait');
 			if(wait){
@@ -360,6 +376,8 @@
 		webm: '',
 		wait: false,
 		scope: false,
+    keepSize: true,
+    customClass: '',
 		onPlay: function(){},
 		onStop: function(){},
 		onLoad: function(){},
