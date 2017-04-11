@@ -152,13 +152,71 @@ function AppController($scope){
     }
   ];
 
-  $scope.reptiles_list = [{
-    "name": "iguana chilena",
-    "scientific_name": "Callopistes maculatus",
-    "vulnerability": "Vulnerable",
-    "description": "Es el reptil más grande del país, alcanzando casi medio metro de largo. Sus colores le permiten camuflarse en su hábitat de zonas de matorral con presencia de roqueríos. Es un activo predador que caza lagartijas, pequeños mamíferos e insectos.",
-    "image_url": "http://bosquepanul.cl/images/rep_01.png?crc=508820980"
-  }];
+  $scope.reptiles_list = [
+    {
+      "name": "iguana chilena",
+      "scientific_name": "Callopistes maculatus",
+      "vulnerability": "Vulnerable",
+      "description": "Es el reptil más grande del país, alcanzando casi medio metro de largo. Sus colores le permiten camuflarse en su hábitat de zonas de matorral con presencia de roqueríos. Es un activo predador que caza lagartijas, pequeños mamíferos e insectos.",
+      "image_url": "http://bosquepanul.cl/images/rep_01.png?crc=508820980"
+    },
+    {
+      "name": "lagartija esbelta",
+      "scientific_name": "Liolaemus tenuis",
+      "vulnerability": "Vulnerable",
+      "description": "Puede medir casi 20 centímetros de largo, se alimenta de insectos y presentan dimorfismo sexual; mientras el macho posee colores brillantes y llamativos, la hembra  presenta colores más grisáceos y unas cuántas escamas coloreadas. El macho posee un territorio y un harén de hembras. cuando otro macho se acerca, se pone a cabecear para mostrarse intimidante.",
+      "image_url": "http://bosquepanul.cl/images/rep_02.png?crc=369508533"
+    },
+    {
+      "name": "culebra de cola corta",
+      "scientific_name": "Tachymenis chilensis",
+      "vulnerability": "Vulnerable",
+      "description": "Posee una coloración marrón con distintos matices y diseños, alcanza hasta 70 centímetros. Prefiere vivir entre matorral y laderas de cerros. Posee veneno, aunque no lo inyecta con su mordedura, si no que “gotea” desde su encía por su colmillo. Este veneno no es letal para el ser humano. Se alimenta de pequeños vertebrados, a los cuales mata por asfixia.",
+      "image_url": "http://bosquepanul.cl/images/rep_03.png?crc=517684194"
+    },
+    {
+      "name": "culebra de cola larga",
+      "scientific_name": "Philodryas chamissonis",
+      "vulnerability": "Vulnerable",
+      "description": "Puede llegar a medir hasta 220 cm de longitud aproximadamente, pone seis a ocho huevos alargados, entre agosto y enero. Su dieta se compone principalmente de roedores, conejos juveniles, insectos y otros reptiles pequeños. Caza a sus presas usando la constricción, aunque también usa su veneno.",
+      "image_url": "http://bosquepanul.cl/images/rep_04.png?crc=9593387"
+    },
+    {
+      "name": "alacrán",
+      "scientific_name": "Orden: Scorpiones",
+      "vulnerability": "Fuera de Peligro",
+      "description": "Pertenece a la familia de los arácnidos,  están provistos de un par de apéndices en forma de pinza, una cola acabada en un aguijón. Alcanzan entre 3 y 9 cm, siendo muy pequeños. Se alimenta de diversos animales invertebrados como insectos o arañas y presenta hábitos nocturnos.",
+      "image_url": "http://bosquepanul.cl/images/bic_01.png?crc=3888171352"
+    },
+    {
+      "name": "cigarra",
+      "scientific_name": "Cicadidae",
+      "vulnerability": "Fuera de Peligro",
+      "description": "Miden entre 1,5 y 6,5 cm de largo. Poseen un aparato bucal suctor que les permite alimentarse de savia de los árboles y otras plantas. Es notorio el canto entonado por los machos para atraer a las hembras, emitiendo un sonido característico y más intenso al anochecer y amanecer.",
+      "image_url": "http://bosquepanul.cl/images/bic_02.png?crc=4293403061"
+    },
+    {
+      "name": "araña pollito",
+      "scientific_name": "Grammostola porteri",
+      "vulnerability": "Inadecuadamente Conocido",
+      "description": "Tienen una tonalidad marrón que predomina en todo su cuerpo. El abdomen presenta pelos café, grises y negros. Se le encuentra habitando madrigueras construidas por ella misma directamente en el suelo, las cuales pueden llegar a los 30cm de profundidad. Los ejemplares adultos pueden llegar a medir 15 centímetros con las patas extendidas.",
+      "image_url": "http://bosquepanul.cl/images/bic_03.png?crc=355808950"
+    },
+    {
+      "name": "mariposa del chagual",
+      "scientific_name": "Castnia psittachus",
+      "vulnerability": "En Peligro",
+      "description": "Es quizá la mariposa más grande de nuestro país con una envergadura de hasta 10 centímetros. Las hembras apareadas vuelan hacia las plantas chaguales donde depositan sus huevos en la base de estas plantas. Al eclosionar, sus larvas se desarrollan subsistiendo de esta planta de la que emergerán luego como mariposas adultas.",
+      "image_url": "http://bosquepanul.cl/images/bic_04.png?crc=177368290"
+    },
+    {
+      "name": "iguana chilena",
+      "scientific_name": "Callopistes maculatus",
+      "vulnerability": "Vulnerable",
+      "description": "Es el reptil más grande del país, alcanzando casi medio metro de largo. Sus colores le permiten camuflarse en su hábitat de zonas de matorral con presencia de roqueríos. Es un activo predador que caza lagartijas, pequeños mamíferos e insectos.",
+      "image_url": "http://bosquepanul.cl/images/rep_01.png?crc=508820980"
+    }
+  ];
 
   $scope.tips = [{
     "message": "Deja en el bosque lo que es del bosque",
