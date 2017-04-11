@@ -70,13 +70,85 @@ function AppController($scope){
     "image_url": "http://bosquepanul.cl/images/ave_011.png?crc=3889604834"
   }];
 
-  $scope.plants_list = [{
-    "name": "litre",
-    "scientific_name": "Lithraea caustica",
-    "vulnerability": "Fuera de Peligro",
-    "description": "Es uno de los árboles más conocidos de la Zona Central de Chile, tanto por su abundancia como por sus sustancias alérgenas, y según la creencia popular hay que saludarlo cuando se le ve en el bosque para evitar la alergia. Cuando florece, sus abundantes flores atraen a muchos insectos, éstas luego generan frutos con una sola semilla cada uno, que son comestibles tanto para aves y roedores como para seres humanos. Crece especialmente en laderas de cerros y en lugares abiertos. Alcanza hasta 6 metros de altura.",
-    "image_url": "http://bosquepanul.cl/images/veg_09.png?crc=4246291524"
-  }];
+  $scope.plants_list = [
+    {
+      "name": "bollén",
+      "scientific_name": "Kageneckia oblonga",
+      "vulnerability": "Fuera de Peligro",
+      "description": "Árbol de hojas perennes  que presentan bordes aserrados y contextura dura. El fruto es una cápsula estrellada que contiene semillas aladas. Se puede encontrar en laderas de cerro cercanos a quebradas. Al igual que otras especies existentes en el valle central,  lamentablemente es cortado para su uso cómo combustible (elaboración de leña y carbón) o para la fabricación de diversas herramientas de uso agrícola. Alcanza hasta 15 metros de altura.",
+      "image_url": "http://bosquepanul.cl/images/veg_01.png?crc=3813885780"
+    },
+    {
+      "name": "peumo",
+      "scientific_name": "Cryptocarya alba",
+      "vulnerability": "Fuera de Peligro",
+      "description": "Su tronco es recto o ligeramente tortuoso, ramificado, con corteza marrón y ligeramente agrietada puede alcanzar un metro de diámetro. Su madera es dura y resistente a la humedad. Sus hojas al ser trituradas desprenden un olor típico. Tiene un fruto que va del rosado al rojo y florece entre noviembre y enero. Alcanza hasta 15 metros de altura.",
+      "image_url": "http://bosquepanul.cl/images/veg_02.png?crc=3997830110"
+    },
+    {
+      "name": "guayacán",
+      "scientific_name": "Porlieria chilensis",
+      "vulnerability": "Vulnerable",
+      "description": "Es un arbusto que puede alcanzar un diámetro de hasta 20 metros. Tiene ramas retorcidas, con hojas opuestas y en parejas de hasta 18 pares. las cuales tienen la facultad de plegarse sobre sí mismas durante la noche. Florece entre agosto y marzo y el fruto es una cápsula de color violeta oscuro. La madera es utilizada en artesanía y se caracteriza por su dureza. Alcanza hasta 5 metros de altura.",
+      "image_url": "http://bosquepanul.cl/images/veg_03.png?crc=4214628183"
+    },
+    {
+      "name": "flor de gallo",
+      "scientific_name": "Alstroemeria ligtu",
+      "vulnerability": "Vulnerable",
+      "description": "Esta planta durante épocas de estrés por las condiciones de su ambiente, se seca perviviendo en raíces engrosadas, tubérculos o bulbos que durante mejores condiciones vuelven a brotar. En la zona central crece en invierno con la ayuda de las lluvias, en lugares soleados, pedregosos o arenosos con buena filtración. Sus flores pueden ser de distintos colores como rojo, amarillo o rosadas.",
+      "image_url": "http://bosquepanul.cl/images/veg_04-crop-u45722.png?crc=271822623"
+    },
+    {
+      "name": "espino",
+      "scientific_name": "Acacia caven",
+      "vulnerability": "Fuera de Peligro",
+      "description": "Es un árbol espinoso de madera dura que florece entre agosto y octubre. Su fruto es  una legumbre negra y gruesa. Dada la dureza de la madera, es utilizado para fabricar objetos torneados, además de usarse para carbón y leña. Su follaje presenta un color verde claro de textura fina, y está integrado por hojas compuestas. Alcanza entre 2 y 6 metros de altura.",
+      "image_url": "http://bosquepanul.cl/images/veg_05.png?crc=3929645599"
+    },
+    {
+      "name": "quisco",
+      "scientific_name": "Echinopsis chiloensis",
+      "vulnerability": "Fuera de Peligro",
+      "description": "Crece principalmente en forma de candelabro ramificado, recto, vigoroso y de hasta 8 metros de largo. Los brotes son cilíndricos de 10 a 12 cm de diámetro. Es frecuente en laderas de exposición norte, en zonas secas o pedregosas.",
+      "image_url": "http://bosquepanul.cl/images/veg_06.png?crc=237465037"
+    },
+    {
+      "name": "chagual",
+      "scientific_name": "Puya chilensis",
+      "vulnerability": "Fuera de Peligro",
+      "description": "Planta de hoja verdes y alargadas con espinas en sus bordes que crece lentamente, tarda hasta veinte años en florecer. Su atractivo principal lo constituye un tallo floral de 2 a 5 metros con flores verdes amarillentas. Hospeda en su interior la larva de la mariposa del chagual, la que se desarrolla en el interior matándola.",
+      "image_url": "http://bosquepanul.cl/images/veg_07.png?crc=4105176426"
+    },
+    {
+      "name": "añañuca",
+      "scientific_name": "Rhodophiala rhodolirion",
+      "vulnerability": "Vulnerable",
+      "description": "Es una planta bulbosa y perenne de alto valor ornamental. Tiene flores de color rojas o blancas con 6 pétalos. Crecen en pleno sol sin ninguna protección en lugares planos o laderas de exposición norte. Su nombre está asociado a una leyenda de amor en la época de independencia sobre una joven indígena llamada Añañuca.",
+      "image_url": "http://bosquepanul.cl/images/veg_08.png?crc=3796092361"
+    },
+    {
+      "name": "litre",
+      "scientific_name": "Lithraea caustica",
+      "vulnerability": "Fuera de Peligro",
+      "description": "Es uno de los árboles más conocidos de la Zona Central de Chile, tanto por su abundancia como por sus sustancias alérgenas, y según la creencia popular hay que saludarlo cuando se le ve en el bosque para evitar la alergia. Cuando florece, sus abundantes flores atraen a muchos insectos, éstas luego generan frutos con una sola semilla cada uno, que son comestibles tanto para aves y roedores como para seres humanos. Crece especialmente en laderas de cerros y en lugares abiertos. Alcanza hasta 6 metros de altura.",
+      "image_url": "http://bosquepanul.cl/images/veg_09.png?crc=4246291524"
+    },
+    {
+      "name": "quillay",
+      "scientific_name": "Quillaja saponaria",
+      "vulnerability": "Fuera de Peligro",
+      "description": "Es un pequeño árbol de un metro de diámetro en su tronco. Las ramas terminales son predominantemente colgantes. Su corteza es de color gris-cenicienta y rasguñada, además de ser rica en saponina. El fruto es una cápsula leñosa formada por cinco folículos estrellados que permanecen en el árbol, secos y abiertos, durante mucho tiempo. Alcanza hasta 20 metros de altura.",
+      "image_url": "http://bosquepanul.cl/images/veg_010.png?crc=423985121"
+    },
+    {
+      "name": "maitén",
+      "scientific_name": "Maytenus boaria",
+      "vulnerability": "Fuera de Peligro",
+      "description": "Es una árbol de corteza agrietada de color grisáceo, puede alcanzar un diámetro de un metro en su base. Sus ramas son generalmente largas y colgantes. Y puede alcanzar hasta 25 metros de altura.",
+      "image_url": "http://bosquepanul.cl/images/veg_011.png?crc=74356718"
+    }
+  ];
 
   $scope.reptiles_list = [{
     "name": "iguana chilena",
