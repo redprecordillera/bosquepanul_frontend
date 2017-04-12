@@ -89,10 +89,17 @@ a{
 
 .social-icon{
   font-size: 4rem;
+  float: left;
+  width: 22%;
+  margin-left: 4%;
+  &:first-child{
+    margin-left: 0;
+  }
 }
 
 .author-credits{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2rem;
+  text-align: right;
 }
