@@ -218,13 +218,32 @@ function AppController($scope){
     }
   ];
 
-  $scope.tips = [{
-    "message": "Deja en el bosque lo que es del bosque",
-    "image_url": "http://bosquepanul.cl/images/frame_05352x344.png?crc=145887399"
-  },{
-    "message": "Utiliza senderos establecidos",
-    "image_url": "http://bosquepanul.cl/images/frame_06269x263.png?crc=3797328173"
-  }];
+  $scope.tips = [
+    {
+      "message": "Planifica y prepara tu viaje",
+      "image_url": "http://bosquepanul.cl/images/frame_01354x345.png?crc=486653381"
+    },
+    {
+      "message": "Dispone adecuadamente de tus desechos",
+      "image_url": "http://bosquepanul.cl/images/frame_02331x323.png?crc=210138108"
+    },
+    {
+      "message": "No hagas fogatas",
+      "image_url": "http://bosquepanul.cl/images/frame_03255x311.png?crc=3870677252"
+    },
+    {
+      "message": "Evita llevar mascotas",
+      "image_url": "http://bosquepanul.cl/images/frame_04257x216.png?crc=367822488"
+    },
+    {
+      "message": "Deja en el bosque lo que es del bosque",
+      "image_url": "http://bosquepanul.cl/images/frame_05352x344.png?crc=145887399"
+    },
+    {
+      "message": "Utiliza senderos establecidos",
+      "image_url": "http://bosquepanul.cl/images/frame_06269x263.png?crc=3797328173"
+    }
+  ];
 
 };
 
