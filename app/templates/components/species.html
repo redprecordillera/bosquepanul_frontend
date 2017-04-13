@@ -1,3 +1,3 @@
 <div class="species">
-  <species-card ng-show="species.active" previous-species="$ctrl.previousSpecies(species)" next-species="$ctrl.nextSpecies(species)" species="species" category="$ctrl.category" ng-repeat="species in $ctrl.list"></species-card>
+  <species-card ng-if="species.active" previous-species="$ctrl.previousSpecies(species)" next-species="$ctrl.nextSpecies(species)" species="species" category="$ctrl.category" ng-repeat="species in $ctrl.list"></species-card>
 </div>
