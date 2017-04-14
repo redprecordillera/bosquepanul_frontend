@@ -70,13 +70,18 @@
 			var label = this.getOption('label');
 			this.playElement = $("<ins class='play-gif'>" + label + "</ins>");
 			this.wrapper.append(this.playElement);
-			this.playElement.css('top', this.previewElement.height()/2 - this.playElement.height()/2);
-			this.playElement.css('left', this.previewElement.width()/2 - this.playElement.width()/2);
+      this.resizeControl();
 		},
+
+    resizeControl: function(){
+      this.playElement.css('top', this.previewElement.height()/2 - this.playElement.height()/2);
+			this.playElement.css('left', this.previewElement.width()/2 - this.playElement.width()/2);
+    },
 
 		addEvents: function(){
 			var gp = this;
 			var playOn = this.getOption('playOn');
+      var resizeTimer;
 
 			switch(playOn){
 				case 'click':
@@ -102,6 +107,14 @@
 				default:
 					console.log(playOn + ' is not accepted as playOn value.');
 			}
+
+      $(window).resize(function() {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(
+            gp.resizeControl(),
+            5
+          );
+      });
 		},
 
 		processScope: function(){
