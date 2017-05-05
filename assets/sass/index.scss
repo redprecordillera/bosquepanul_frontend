@@ -112,3 +112,17 @@ a{
   font-size: 1.2rem;
   text-align: right;
 }
+
+// FLEXBOX
+.flex{
+  display: flex !important;
+  &-vertical{
+    align-items: center;
+  }
+  &-horizontal{
+    align-items: center;
+  }
+  &-pulled-out{
+    justify-content: space-between;
+  }
+}
