@@ -1,7 +1,6 @@
 AppController.$inject = ['$scope'];
 
 function AppController($scope){
-  console.log("APPCONTROLLER");
   $scope.birds_list = [
     {
       "name": "TIJERAL",
