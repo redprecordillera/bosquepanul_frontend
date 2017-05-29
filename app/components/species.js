@@ -1,29 +1,31 @@
 SpeciesController.$inject = [];
 
 function SpeciesController(){
+  this.current_especie = {};
+
   this.$onInit = function() {
-    this.list[0].active=true;
+    this.current_especie = this.list[0];
   };
 
-  this.previousSpecies = function(species){
+  this.previousSpecies = function(){
     var list_length = this.list.length;
-    var species_index = this.list.indexOf(species);
-    species.active = false;
+    var species_index = this.list.indexOf(this.current_especie);
+
     if(list_length>1 && species_index>0){
-      this.list[species_index-1].active = true;
+      this.current_especie = this.list[species_index-1];
     }else{
-      this.list[list_length-1].active = true;
+      this.current_especie = this.list[list_length-1];
     }
   }
 
-  this.nextSpecies = function(species){
+  this.nextSpecies = function(){
     var list_length = this.list.length;
-    var species_index = this.list.indexOf(species);
-    species.active = false;
+    var species_index = this.list.indexOf(this.current_especie);
+
     if(list_length>1 && species_index<(list_length-1)){
-      this.list[species_index+1].active = true;
+      this.current_especie = this.list[species_index+1];
     }else{
-      this.list[0].active = true;
+      this.current_especie = this.list[0];
     }
   }
 
