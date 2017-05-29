@@ -1,29 +1,31 @@
 TipsController.$inject = [];
 
 function TipsController(){
+  this.current_tip = {};
+
   this.$onInit = function() {
-    this.list[0].active=true;
+    this.current_tip = this.list[0];
   };
 
-  this.previousTip = function(tip){
+  this.previousTip = function(){
     var list_length = this.list.length;
-    var tip_index = this.list.indexOf(tip);
-    tip.active = false;
+    var tip_index = this.list.indexOf(this.current_tip);
+
     if(list_length>1 && tip_index>0){
-      this.list[tip_index-1].active = true;
+      this.current_tip = this.list[tip_index-1];
     }else{
-      this.list[list_length-1].active = true;
+      this.current_tip = this.list[list_length-1];
     }
   }
 
-  this.nextTip = function(tip){
+  this.nextTip = function(){
     var list_length = this.list.length;
-    var tip_index = this.list.indexOf(tip);
-    tip.active = false;
+    var tip_index = this.list.indexOf(this.current_tip);
+
     if(list_length>1 && tip_index<(list_length-1)){
-      this.list[tip_index+1].active = true;
+      this.current_tip = this.list[tip_index+1];
     }else{
-      this.list[0].active = true;
+      this.current_tip = this.list[0];
     }
   }
 };
