@@ -201,7 +201,7 @@
 			var wait = this.getOption('wait');
 			if(wait){
 				//Wait until gif loads
-				this.gifElement.load( function(){
+				this.gifElement.on('load', function(){
 					gp.animationLoaded = true;
 					gp.resetEvents();
 					gp.previewElement.hide();
