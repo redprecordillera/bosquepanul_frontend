@@ -6,15 +6,11 @@ function SpinnerOnLoadDirective(){
       ngSrc: '@'
     },
     link: function(scope, element) {
-      var spinner;
-      
       element.on('load', function() {
-        $(element).show();
-        $(spinner).remove();
+        $(element).fadeTo(250, 1);
       });
       scope.$watch('ngSrc', function() {
-        spinner = $('<img class="u-full-width" src="assets/img/transparent.png" />').insertAfter(element);
-        $(element).hide();
+        $(element).fadeTo(250, 0.6);
       });
     }
   };
