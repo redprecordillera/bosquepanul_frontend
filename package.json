@@ -8,6 +8,7 @@
     "angular-route": "^1.6.2",
     "angular-ui-router": "^0.4.2",
     "bower": "^1.8.4",
+    "bower-webpack-plugin": "^0.1.9",
     "css-loader": "^0.26.2",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",

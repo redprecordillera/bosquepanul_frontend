@@ -1,4 +1,5 @@
 var path = require('path');
+const BowerWebpackPlugin = require("bower-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
@@ -37,6 +38,7 @@ var config = {
   },
   plugins: [
     new ExtractTextPlugin("styles.css"),
+    new BowerWebpackPlugin(),
     new UglifyJSPlugin()
   ]
 }
