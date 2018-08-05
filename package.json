@@ -25,7 +25,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "./node_modules/bower/bin/bower install",
+    "build": "./node_modules/bower/bin/bower install -f -p",
     "compress": "./node_modules/webpack/bin/webpack.js",
     "start": "./node_modules/http-server/bin/http-server",
     "deploy": "./node_modules/http-server/bin/http-server -p 5000",
