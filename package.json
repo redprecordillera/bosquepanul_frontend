@@ -1,7 +1,7 @@
 {
   "name": "bosquepanul_frontend",
-  "version": "1.0.0",
-  "description": "Frontend written in angularjs with",
+  "version": "1.5.0",
+  "description": "Frontend written in angularjs",
   "main": "index.js",
   "dependencies": {
     "angular": "^1.6.2",
@@ -40,7 +40,7 @@
     "type": "git",
     "url": "git+https://github.com/redprecordillera/bosquepanul_frontend.git"
   },
-  "author": "mcueto <yo@marcelocueto.cl>",
+  "author": "mcueto <cueto@live.cl>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/redprecordillera/bosquepanul_frontend/issues"
