@@ -28,7 +28,7 @@
     "build": "./node_modules/bower/bin/bower install -f -p",
     "compress": "./node_modules/webpack/bin/webpack.js",
     "start": "./node_modules/http-server/bin/http-server",
-    "deploy": "./node_modules/http-server/bin/http-server -p 5000",
+    "deploy": "./node_modules/http-server/bin/http-server -p 5000 --ssl --cert /home/dokku/bosquepanul/tls/cert.pem --key /home/dokku/bosquepanul/tls/key.pem",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "npm run build && npm run compress",
     "dokku": {
